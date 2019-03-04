@@ -16,4 +16,4 @@ OR
 
 you can directly access this application
 
-https://boring-wiles-142bb5.netlify.com/
+https://serene-bell-9d7fe1.netlify.com/
