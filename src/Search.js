@@ -43,14 +43,21 @@ class Search extends Component {
       combinedData["demoFetch"] = values[0];
       combinedData["conFetch"] = values[1];
 
-      this.setState({
-        success:true,
-        name:values[0].name,
-        gender:values[0].gender,
-        birthDate:values[0].birthDate,
-        pCon:values[1].entry
+      if(values[0].name[0].text==="System"){
+        alert("Patient not found.")
+      }
+
+      else{
+        this.setState({
+          success:true,
+          name:values[0].name,
+          gender:values[0].gender,
+          birthDate:values[0].birthDate,
+          pCon:values[1].entry
+        });
+
+      }
       });
-     });
   }
 }
 
